@@ -1,95 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>کارگاه محتوا</title>
-
-    <!-- آیکن اختصاصی آیفون -->
-    <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="https://etikartpost-cyber.github.io/my-icons./apple-touch-icon.png?v=3"
-    >
-
-    <!-- آیکن مرورگر -->
-    <link
-        rel="icon"
-        type="image/png"
-        href="https://etikartpost-cyber.github.io/my-icons./apple-touch-icon.png?v=3"
-    >
-
-    <!-- تنظیمات نمایش در آیفون -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="کارگاه محتوا">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <meta name="theme-color" content="#000000">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background: #000000;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
-
-        #fallback {
-            display: none;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            font-family: sans-serif;
-        }
-
-        #fallback a {
-            color: #DAB101;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>کارگاه محتوا</title>
+<link rel="apple-touch-icon" href="https://etikartpost-cyber.github.io/my-icons./apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://etikartpost-cyber.github.io/my-icons./apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://etikartpost-cyber.github.io/my-icons./apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="کارگاه محتوا">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+html,body{margin:0;height:100%;background:#000}
+iframe{position:fixed;inset:0;width:100%;height:100%;border:0;background:#000}
+.fb{position:fixed;inset-inline:0;bottom:0;padding:8px;text-align:center;font:13px system-ui,sans-serif;color:#999;pointer-events:none}
+.fb a{color:#ccc;pointer-events:auto}
+</style>
 </head>
-
 <body>
-
-    <iframe
-        id="app"
-        src=""
-        allow="fullscreen"
-        allowfullscreen>
-    </iframe>
-
-    <div id="fallback">
-        <p>اگر صفحه باز نشد، از لینک زیر وارد شوید:</p>
-        <br>
-        <a id="directLink" href="#" target="_blank">
-            باز کردن کارگاه محتوا
-        </a>
-    </div>
-
-    <script>
-        // آدرس Web App گوگل را در این قسمت قرار بده
-        var GAS_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
-
-        // نمایش برنامه
-        document.getElementById('app').src = GAS_URL;
-
-        // لینک جایگزین
-        document.getElementById('directLink').href = GAS_URL;
-    </script>
-
+<iframe id="app" title="کارگاه محتوا" allow="clipboard-write"></iframe>
+<div class="fb">اگر صفحه باز نشد، <a id="open" href="#">اینجا را بزن</a></div>
+<script>
+var GAS_URL = 'https://script.google.com/macros/s/AKfycbyu8pbQBFtbXDkDa1ics_0X9QwiUiwfL87rSJgrZQm1bYLp5NVaSX7uNnXA2ZS6BvSbpw/exec';
+document.getElementById('app').src = GAS_URL;
+document.getElementById('open').href = GAS_URL;
+</script>
 </body>
 </html>
